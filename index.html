@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo esto...</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+</head>
+<body >
+    
+    <div id="particleWrapper">
+        <div id="particles-js"></div>  
+        <h1 class="texto">Feliz 14 de Febrero Te Quiero ♥</h1>
+
+        <button id="openModal" >
+            Presiona :3   
+        </button>
+
+        <div class="modal" id="modal">
+            <div class="modal-inner">
+                <p class="texto2">
+                    Estas seguro que quieres pasar a la siguiente pagina?
+                </p>
+                <div class="button-container">
+                    <button class="botonSi" id="nextPage" onclick="redigirirPagina()">Sipi💌</button>
+                    <button class="botonNo" id="closeModal"  onclick="closeBtn()">Seguir escuchando🛐</button>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <audio id="NoMeDejesDeQuerer"  >
+        <source src="songs/NoMeDejesDeQuerer.mp3" type="audio/mp3">
+        <!-- Si el formato MP3 no es compatible, proporciona alternativas -->
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <script src="main.js"></script>
+</body>
+</html>
